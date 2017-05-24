@@ -1,0 +1,18 @@
+{
+  "name": "alarm-clock",
+  "authors": [
+    "EdwardMudaida <eddieigo8@gmail.com>"
+  ],
+  "description": "An online alarm clock built using Moment.js",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
