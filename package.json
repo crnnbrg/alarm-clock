@@ -1,0 +1,22 @@
+{
+  "name": "alarm-clock",
+  "version": "1.0.0",
+  "description": "AN online clock that makes use of Moment.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardMudaida/alarm-clock.git"
+  },
+  "author": "EdwardMudaida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardMudaida/alarm-clock/issues"
+  },
+  "homepage": "https://github.com/EdwardMudaida/alarm-clock#readme",
+  "devDependencies": {
+    "bower-files": "^3.14.1"
+  }
+}
