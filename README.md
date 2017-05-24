@@ -1,5 +1,7 @@
 # Alarm Clock
 
+Author: [EdwardMudaida](https://github.com/EdwardMudaida)
+
 An online alarm clock that uses Moment.js
 
 ## Specifications
@@ -8,3 +10,10 @@ An online alarm clock that uses Moment.js
 - A user should be able to enter a time into a form to set an alarm.
 - The alarm should turn on at the specified time.
 - Show a picture/animation/play a sound when the alarm goes off.
+
+## Technologies used
+
+- Bootstrap
+- jQuery
+- Moment.js
+
