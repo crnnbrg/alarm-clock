@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EdwardMudaida/alarm-clock#readme",
   "devDependencies": {
-    "bower-files": "^3.14.1"
+    "bower-files": "^3.14.1",
+    "gulp": "^3.9.1"
   }
 }
