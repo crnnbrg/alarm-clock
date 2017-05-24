@@ -1,4 +1,6 @@
+var browserify = require('browserify');
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 var lib = require('bower-files')({
   "overrides":{
     "bootstrap" : {
@@ -22,3 +24,5 @@ gulp.task('bowerCSS', function () {
 	.pipe(concat('vendor.css'))
 	.pipe(gulp.dest('./build/css'));
 });
+
+gulp.task('bower', ['bowerJS', 'bowerCSS']);
