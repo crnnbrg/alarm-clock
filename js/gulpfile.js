@@ -1,7 +1,13 @@
+var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
-var gulp = require('gulp');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var utitlities = require('gulp-util');
+var del = require('del');
+var jshint = require('gulp-util');
+var buildProduction = utitlities.env.production;
+
 var lib = require('bower-files')({
   "overrides":{
     "bootstrap" : {
@@ -27,3 +33,5 @@ gulp.task('bowerCSS', function () {
 });
 
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
+
+gulp.task('jsB')
