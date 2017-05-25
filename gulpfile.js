@@ -21,6 +21,8 @@ var lib = require('bower-files')({
 });
 
 var browserSync = require('browser-sync');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('jshint', function () {
 	return gulp.src(['js/*.js'])
@@ -32,6 +34,12 @@ gulp.task('concatInterface', function () {
 	return gulp.src(['js/*-interface.js'])
 	.pipe(concat('allConcat.js'))
 	.pipe(gulp.dest('./tmp'));
+});
+
+gulp.task('concatCSS', function() {
+	return gulp.src(['css/*.css'])
+	.pipe(concat('allConcat.css'))
+	.pipe(gulp.dest('./build/css'))
 });
 
 gulp.task('jsBrowserify', ['concatInterface'], function () {
@@ -60,7 +68,7 @@ gulp.task('cssBower', function () {
 	.pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('bower', ['jsBower', 'cssBower']);
+gulp.task('bower', ['jsBower', 'cssBower', 'concatCSS']);
 
 gulp.task('clean', function () {
 	return del(['build', 'tmp']);
@@ -77,7 +85,7 @@ gulp.task('build', ['clean'], function () {
 });
 
 gulp.task('serve', ['build'], function () {
-	browsersync.init({
+	browserSync.init({
 		server: {
 			baseDir:"./",
 			index:"index.html"

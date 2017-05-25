@@ -1,0 +1,9 @@
+body {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+input , button {
+	height: 40px;
+	border-radius: 5px;
+}
